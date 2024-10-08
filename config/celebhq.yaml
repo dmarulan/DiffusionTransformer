@@ -1,6 +1,6 @@
 dataset_params:
   im_path: '/content/drive/My Drive/cropped_train_256_ViT/0/'
-  im_size : 256
+  im_size : 128
   im_channels : 3
 
 diffusion_params:
