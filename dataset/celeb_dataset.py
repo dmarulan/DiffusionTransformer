@@ -45,9 +45,9 @@ class CelebDataset(Dataset):
         """
         assert os.path.exists(im_path), "images path {} does not exist".format(im_path)
         ims = []
-        fnames = glob.glob(os.path.join(im_path, 'CelebA-HQ-img/*.{}'.format('png')))
-        fnames += glob.glob(os.path.join(im_path, 'CelebA-HQ-img/*.{}'.format('jpg')))
-        fnames += glob.glob(os.path.join(im_path, 'CelebA-HQ-img/*.{}'.format('jpeg')))
+        fnames = glob.glob(os.path.join(im_path, '/*.{}'.format('png')))
+        fnames += glob.glob(os.path.join(im_path, '/*.{}'.format('jpg')))
+        fnames += glob.glob(os.path.join(im_path, '/*.{}'.format('jpeg')))
 
         for fname in tqdm(fnames):
             ims.append(fname)
